@@ -8,16 +8,18 @@ Backend для игры KC Clicker (Telegram Mini App).
 
 - `BOT_TOKEN` — токен бота от @BotFather
 - `SUPABASE_URL` — URL проекта Supabase
-- `SUPABASE_KEY` — анонимный ключ Supabase
+- `SUPABASE_KEY` — anon публичный ключ Supabase
 
 ## Эндпоинты
 
-- `GET /` — проверка
-- `POST /api/auth` — авторизация через Telegram
-- `POST /api/save` — сохранение состояния
+- `GET /` — проверка работы сервера
+- `POST /api/auth` — авторизация через Telegram initData
+- `POST /api/save` — сохранение состояния игрока
 - `GET /api/top` — топ игроков
 
 ## Схема БД (Supabase SQL)
+
+Запусти в Supabase → SQL Editor:
 
 ```sql
 create table players (
